@@ -1,0 +1,96 @@
+Curso Python#21-Funções(Parte2)
+Nessaaula,vamoscontinuarnossosestudosdefunçõesemPython,aprendendomaissobre
+Tópicos:
+- Interactive Help em Python;
+- Docstrings (para documentar nossas funções);
+- Argumentos opcionais (para dar mais dinamismo em funções Python);
+- Escopo de variáveis (entenda quando nasce, morre e está visível uma variável);
+- Retorno de resultados.
+
+IN TERACTIVE HELP
+(Ajuda interativa)
+
+Help():
+Para usar essa função, basta digitar ela no campus python console
+-------------------------------------------------------------------------------------------------
+>>> help():
+help> print
+Help on built-in function print in module builtins:
+print(*args, sep=' ', end='\n', file=None, flush=False)
+    Prints the values to a stream, or to sys.stdout by default.
+
+    sep
+      string inserted between values, default a space.
+    end
+      string appended after the last value, default a newline.
+    file
+      a file-like object (stream); defaults to the current sys.stdout.
+    flush
+      whether to forcibly flush the stream.
+-------------------------------------------------------------------------------------------------
+Outra maneira é usar a essa função dentro do seu terminar de código, basta chamar a função e por entre parentes a outra função que quer saber mais.
+Help(print)
+
+Ao dar run do programa será exibido seu resultado e a definição da função entre parentes.
+-------------------------------------------------------------------------------------------------
+Ou usar a função:
+Print(input.__doc__)
+Read a string from standard input.  The trailing newline is stripped.
+
+The prompt string, if given, is printed to standard output without a
+trailing newline before reading input.
+
+If the user hits EOF (*nix: Ctrl-D, Windows: Ctrl-Z+Return), raise EOFError.
+On *nix systems, readline is used if available.
+
+-------------------------------------------------------------------------------------------------
+DOCSTRINGS
+É quando são mensagens usando as (""" texto """) assim é possível usar a
+função help em funções que o dev crio, como por exemplo a função contador(),
+ao criar sua função basta fazem um comentario com as extruções de uso, usando
+aspas tripas ("""""").
+def contador(i, f, p):
+    """
+    --> Faz uma contagem e mostra na tela.
+    :param i: Início da contagem
+    :param f: Fim da contagem
+    :param p: Passo da contagem
+    :return: sem retorno
+    """
+    c = 1
+    while c <= f:
+        print(f'(c)', end='..')
+        c += p
+    print('FIM')
+help(contador)
+
+
+contador(2, 10, 2)
+#os parâmetros 2, 10, 2 são transferidos pra i, f, p.
+>>>mostra:
+contador, começa no 2, termina no 10, pulando 2 em 2
+-----------------------------------------------------------------------------
+                PARÂMETROS OPCIONAIS
+Oa criar uma função nova com o 'def', é possivel definir parâmetros opcionais.
+ex:
+    def somar(a, b, c):
+        s = a + b + c
+        print(f'A soma vale (s)')
+
+    somar(1,4,5)
+---------------------------------------
+Ao fazer isso, os parâmetros da
+nova função tem que nercessariamente
+serem 3 valores, caso informe apena
+2 valores a função "soma(a,b)"
+pode dar erro.
+---------------------------------------
+#porem ao atribuir outros valores
+aos parâmetros a,b,c como o valor
+0 (sero) a sua função não dará erro
+
+    def somar(a=0, b=0, c=0):
+        s = a + b + c
+        print(f'A soma vale (s)')
+
+    somar(1,4,5)
