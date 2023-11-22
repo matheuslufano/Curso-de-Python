@@ -380,6 +380,10 @@ Crie um programa que tenha uma tupla com várias palavas
 (ñ usar acentos). A pois isso, mostre, para cada palavra, quais são as
 suas vogais.
 ====================================================================
+
+                Curso Python #17 - Listas (Parte 1)
+                    Desafio do ex078 ao ex083
+====================================================================
 DESAFIO - 078
 Faça um programa que leia 5 valores numéricos e guarde-os em uma lista.
 No final, mostre qual foi o mair e o menor valor.
@@ -415,6 +419,10 @@ Crie um programa onde o usuário digite uma expressão qualquer que
 use parênteses. Seu aplicativo deverá analisar se a expressão passada
 está com os parenteses abertos e fechados na ordem correta.
 ====================================================================
+
+                Curso Python #17 - Listas (Parte 2)
+                    Desafio ex084 a ex089
+====================================================================
 DESAFIO - 084
 Faça um programa que leia nome e peso de várias pessoas, guardando tudo
 em uma lista. No final mostre:
@@ -447,7 +455,7 @@ tudo em uma lista composta.
 DESAFIO - 089
 Crie um programa que leia nome e duas notas de vários alunos e guarde
 tudo em uma lista composta. No Final, mostre um boletim contendo a média
-de cada um e permita que o usuário possa mostrar as nostas de cada aluno
+de cada um e permita que o usuário possa mostrar as notas de cada aluno
 individualmente.
 ====================================================================
 DESAFIO - 090
